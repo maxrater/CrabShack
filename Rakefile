@@ -26,7 +26,7 @@ namespace :generate do
     puts "Creating #{model_path}"
     File.open(model_path, 'w+') do |f|
       f.write(<<-EOF.strip_heredoc)
-        class #{model_name} < ActiveRecord::Base
+        class #{model_name} 
           # Remember to create a migration!
         end
       EOF
