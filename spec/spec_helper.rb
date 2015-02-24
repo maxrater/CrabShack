@@ -1,9 +1,8 @@
 ENV['RACK_ENV'] ||= 'test'
 
 require 'rubygems'
-require File.expand_path('../environment', __FILE__)
+require File.expand_path('../../environment', __FILE__)
 
-require 'shoulda-matchers'
 require 'rack/test'
 
 RSpec.configure do |config|
