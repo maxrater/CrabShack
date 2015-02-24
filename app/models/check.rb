@@ -1,3 +1,4 @@
 class Check < ActiveRecord::Base
-  # Remember to create a migration!
+  belongs_to :restaurant
+  has_many :checks, through: :checks_meals
 end

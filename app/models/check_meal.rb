@@ -1,3 +1,4 @@
 class CheckMeal < ActiveRecord::Base
-  # Remember to create a migration!
+  belongs_to :check
+  belongs_to :meal
 end

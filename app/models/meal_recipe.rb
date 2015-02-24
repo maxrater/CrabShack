@@ -1,3 +1,4 @@
 class MealRecipe < ActiveRecord::Base
-  # Remember to create a migration!
+  belongs_to :meal
+  belongs_to :recipe
 end

@@ -1,3 +1,4 @@
 class Meal < ActiveRecord::Base
-  # Remember to create a migration!
+  has_many :checks, through: :checks_meals
+  has_many :recipes, through: :meals_recipes
 end

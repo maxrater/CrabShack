@@ -1,3 +1,4 @@
 class Restaurant < ActiveRecord::Base
-  # Remember to create a migration!
+  belongs_to :manager, class_name: 'User'
+  belongs_to :owner, class_name: 'User'
 end

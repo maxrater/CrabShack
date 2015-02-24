@@ -1,3 +1,4 @@
 class Ingredient < ActiveRecord::Base
-  # Remember to create a migration!
+  has_many :ingredients_recipes
+  has_many :recipes, through: :ingredients_recipes
 end
