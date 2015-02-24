@@ -13,17 +13,17 @@ get '/users/:id' do
 
 end
 
-#Create / Adds new user
+#Create / Adds new user to array
 post '/users' do
   redirect '/users'
 end
 
-#Update / Updates user with ID
+#Update / Updates user with ID in the array
 put '/users/:id' do
   redirect '/users'
 end
 
-#Destroy / Removes the users from the system 
+#Destroy / Removes the users from the array 
 delete '/users/:id' do
   redirect '/users'
 end
