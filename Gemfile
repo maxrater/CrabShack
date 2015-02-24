@@ -4,7 +4,8 @@ source 'https://rubygems.org'
 
 gem 'pg'
 gem 'sinatra'
-gem 'activerecord', '~>4.1'
+gem 'activesupport', '~>4.1'
+gem 'activerecord',  '~>4.1'
 
 gem 'rake'
 
