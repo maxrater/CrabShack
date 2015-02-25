@@ -20,8 +20,9 @@ Dir[APP_ROOT.join('app', 'models', '*.rb')].each do |model_file|
   autoload ActiveSupport::Inflector.camelize(filename), model_file
 end
 
-# Heroku controls what database we connect to by setting the DATABASE_URL environment variable
-# We need to respect that if we want our Sinatra apps to run on Heroku without modification
+# Heroku controls what database we connect to by setting the DATABASE_URL
+# environment variable we need to respect that if we want our Sinatra apps to
+# run on Heroku without modification
 db = URI.parse(ENV['DATABASE_URL'] || "postgres://localhost/#{APP_NAME}_#{Sinatra::Application.environment}")
 
 DB_NAME = db.path[1..-1]
@@ -32,11 +33,11 @@ DB_NAME = db.path[1..-1]
 #   to :development
 
 ActiveRecord::Base.establish_connection(
-  :adapter  => db.scheme == 'postgres' ? 'postgresql' : db.scheme,
-  :host     => db.host,
-  :port     => db.port,
-  :username => db.user,
-  :password => db.password,
-  :database => DB_NAME,
-  :encoding => 'utf8'
+  adapter:  db.scheme == 'postgres' ? 'postgresql' : db.scheme,
+  host:     db.host,
+  port:     db.port,
+  username: db.user,
+  password: db.password,
+  database: DB_NAME,
+  encoding: 'utf8'
 )
