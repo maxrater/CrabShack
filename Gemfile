@@ -9,6 +9,8 @@ gem 'pg'
 gem 'activesupport', '~>4.1'
 gem 'activerecord',  '~>4.1'
 
+gem 'bcrypt-ruby'
+
 group :test do
   gem 'rspec'
   gem 'rack-test'

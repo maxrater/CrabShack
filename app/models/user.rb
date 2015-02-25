@@ -1,9 +1,11 @@
-class User 
-  attr_accessor :name, :password
+class User < ActiveRecord::Base
 
-  def initialize(args)
-    @name = args[:name]
-    @password = args[:password]
+  def say_hi
+    "hello #{name}"
+  end
+
+  def say_goodbye(user)
+    "#{name} Says Goodbye to #{user.name}"  
   end
 
 end
