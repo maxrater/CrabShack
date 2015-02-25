@@ -4,6 +4,8 @@ gem 'sinatra'
 gem 'rake'
 
 gem 'pg'
+gem 'activerecord'
+gem 'activesupport'
 
 group :development do
   gem 'pry'

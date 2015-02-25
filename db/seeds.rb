@@ -15,6 +15,10 @@ restaurant = Restaurant.create(name: 'Crab Shack', manager: manager, owner: owne
   Clam
   Squid
   Cod
+  Squirrel
+  SeaLion
+  Moose
+  RockDove
 }.each { |i| Ingredient.create(name: i) }
 
 meal = Meal.create(name: 'Crab Parmesan w/ Linguini', price: '24.99', restaurant: restaurant)
