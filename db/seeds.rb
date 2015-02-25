@@ -1,5 +1,3 @@
-require 'pry'
-
 owner = User.create(name: 'Chris DiMartino', password_digest: '123123123123')
 manager = User.create(name: 'Zack Mance', password_digest: '23232323232')
 
