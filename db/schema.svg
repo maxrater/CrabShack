@@ -124,7 +124,7 @@
 <part>id</part>
 </key>
 </table>
-<table x="462" y="383" name="ingredients_recipes">
+<table x="462" y="383" name="recipe_ingredients">
 <row name="id" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
