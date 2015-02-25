@@ -4,10 +4,10 @@ class Meal < ActiveRecord::Base
   belongs_to :restaurant
 
   def cost
-    recipes.map { |r| r.cost }.sum.to_f
+    recipes.map { |r| r.cost }.sum
   end
 
   def margin
-    (price - cost).to_f
+    price - cost
   end
 end
