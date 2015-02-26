@@ -1,6 +1,6 @@
 #Index / Return All Users
 get '/users' do
-  
+  erb :"user/index"
 end
 
 #Show / Return the user with :id

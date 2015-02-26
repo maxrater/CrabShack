@@ -10,6 +10,7 @@ require 'rubygems'
 require 'uri'
 require 'pathname'
 
+require 'erb'
 
 # Some helper constants for path-centric logic
 APP_ROOT = Pathname.new(File.expand_path('../', __FILE__))
@@ -17,6 +18,8 @@ APP_NAME = APP_ROOT.basename.to_s
 
 configure do
   set :root, APP_ROOT.to_path
+  set :views, File.join(Sinatra::Application.root, "app", "views")
+
   enable :session
 end
 
