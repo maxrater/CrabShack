@@ -7,11 +7,11 @@ gem 'pg'
 gem 'activerecord'
 gem 'activesupport'
 
+gem 'bcrypt'
+
 group :development do
   gem 'pry'
 end
-
-gem 'bcrypt-ruby'
 
 group :test do
   gem 'rspec'
