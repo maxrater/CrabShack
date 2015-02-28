@@ -1,2 +1,9 @@
-body{background-color: #E6546B }
+body{
+  background-color: #E6546B; }
+
+#content{
+  background-color: #C9DAA4;
+  margin: 0 auto;
+  text-align: left;
+  width: 70%; }
 
