@@ -24,7 +24,7 @@ APP_NAME = APP_ROOT.basename.to_s
 
 configure do
   set :root, APP_ROOT.to_path
-  set :views, File.join(APP_ROOT, "app","view")
+  set :views, File.join(APP_ROOT, "app","views")
   enable :session
 end
 

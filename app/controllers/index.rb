@@ -1,9 +1,5 @@
-require 'sinatra'
+# Base Controller, will render the default home route. 
 
 get '/' do
-  # Inspects all of the methods of the request objects
-  # puts request.inspect
-
-  # Return with a response code: 200 and body
-  'Welcome To Phase 2 Fiddler Crabs - Crabuluous!'
+  erb :index
 end
