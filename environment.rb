@@ -2,7 +2,7 @@ ENV['BUNDLE_GEMFILE'] ||= File.expand_path('../Gemfile', __FILE__)
 
 # DSL
 require 'sinatra'
-
+require "sinatra/reloader" if development?
 # DB / ORM
 require 'pg'
 require 'active_record'
@@ -27,6 +27,8 @@ configure do
   set :views, File.join(APP_ROOT, "app","views")
   enable :session
 end
+
+register Sinatra::Reloader
 
 # Set up the controllers and models
 Dir[APP_ROOT.join('app', 'models', '*.rb')].each { |file| require file }
