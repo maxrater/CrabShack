@@ -2,3 +2,19 @@ header {
   background-color: #DA8F72;
   border-bottom: 3px solid #823517;
   height: 75px; }
+
+header > div {
+  float:left;
+  display: block; }
+
+.crab-icon{
+  height: 80%;
+  width:  30%;
+  background: url('../images/crab.png') no-repeat center right; }
+
+.store-name{
+  font-family: 'Freckle Face', cursive; 
+  font-size: 2.5em;
+  width: 70%;
+  padding-top: 10px;
+  text-align: center; }
