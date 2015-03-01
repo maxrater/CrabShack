@@ -1,9 +1,20 @@
 body{
   background-color: #E6546B; }
 
-#content{
+#content {
   background-color: #C9DAA4;
   margin: 0 auto;
   text-align: left;
-  width: 70%; }
+ }
+  
+ @media screen and (max-width: 720px) {
+   #content{
+     width: 100%; }
+ }
+
+ @media screen and (min-width: 720px) {
+   #content{
+     width: 70%;
+   }
+ }
 
