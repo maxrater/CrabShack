@@ -1,9 +1,17 @@
 <div id='auth'>
-  <form action= '/auth/login' method='PUT'>
-    <label class='lable-for'>Username</label>
-    <input type='text' name='name'>
-    <label class='lable-for'>Username</label>
-    <input type='password' name='password'>
-    <input type='submit' class='btn' value='login'/>
+  <form action= '/auth/login' method='post'>
+    <div class='field'>
+      <label class='lable-for'>username:</label>
+      <input type='text' name='name' placeholder='username'/>
+    </div>
+    <div class='field'>
+      <label class='lable-for'>password:</label>
+      <input type='password' name='password' placeholder='password'/>
+    </div>
+    <div class='actions'>
+      <input type='submit' class='btn' value='login'/>
+      or 
+      <a href='/auth/register' class='btn'>register</a>
+    </div>
   </form>
 </div>
