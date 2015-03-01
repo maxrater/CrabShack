@@ -1,4 +1,6 @@
 #navigation {
+  float:left;
+  display: block;
   width: 25%; 
   background-color: #B05F3F;
   height: 100vh; }
@@ -22,4 +24,5 @@
 #navigation > ul > li:hover {
   background-color: #823517;
   color: #FFE792;
+  cursor: pointer;
 }

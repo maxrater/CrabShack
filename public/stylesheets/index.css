@@ -1,0 +1,26 @@
+#index {
+  float: left;
+  display: block;
+  width: 75%;
+  background-color: #C9DAA4;
+  border-bottom: 2px solid #819B4A;
+  height: 100vh;
+}
+
+.hero {
+  background-color:#8ACBB5;
+  border-bottom: 3px solid #388F73; }
+
+.hero > img {
+  width:175px;
+  padding: 20px;
+}
+
+.description{
+  background-color: #FFE792;
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 3px solid #D9BD5C;
+  border-top: none; }
+  
