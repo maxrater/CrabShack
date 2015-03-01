@@ -1,0 +1,25 @@
+#navigation {
+  width: 25%; 
+  background-color: #B05F3F;
+  height: 100vh; }
+
+#navigation > ul {
+  margin: 0px;
+  list-style: none;
+  padding-left: 0px;
+  background-color: #B05F3F; }
+
+#navigation > ul > li{
+  height: 50px;
+  text-align: center;
+  padding-top: 10px; 
+  border-bottom: 2px solid #823517;
+  line-height: 1.5em;
+  font-family: 'Freckle Face', cursive; 
+  font-size: 1.5em;
+}
+
+#navigation > ul > li:hover {
+  background-color: #823517;
+  color: #FFE792;
+}

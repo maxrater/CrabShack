@@ -4,12 +4,14 @@
     <link rel='stylesheet' href='stylesheets/normalize.css' type='text/css'>
     <link rel='stylesheet' href='stylesheets/application.css' type='text/css'>
     <link rel='stylesheet' href='stylesheets/header.css' type='text/css'>
+    <link rel='stylesheet' href='stylesheets/navigation.css' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Freckle+Face' rel='stylesheet' type='text/css'>
     <title><%= @title || "LightSaber" %></title>
   </head>
   <body>
     <%= erb :_header, layout: false %>
     <div id='content'>
+      <%= erb :_navigation, layout: false %>
       <%= yield %>
     </div>
   </body>
