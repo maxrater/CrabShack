@@ -1,0 +1,19 @@
+#auth {
+  float: left;
+  display: block;
+  width: 75.5%;
+  background-color: #C9DAA4;
+  border-bottom: 2px solid #819B4A;
+  height: 100vh;
+}
+
+#auth > form {
+  width: 60%;
+  background-color: #FFE792;
+  height: 100px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  border: 3px solid #D9BD5C;
+  border-top: none; }
+
