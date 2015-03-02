@@ -5,7 +5,12 @@ get '/' do
 end
 
 get '/admin' do
-  puts "ZAAACCCKKKK"
-  puts session[:user_id]
+ 
+  redirect '/auth/signin?error=not allowed here' if session[:user_id].nil?
+
+  @options = Hash.new
+  @options[:users] = '/users'
+  @options[:recipes] = '/recipes'
+
   erb :admin
 end

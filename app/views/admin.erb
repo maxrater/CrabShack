@@ -1,1 +1,5 @@
-hello world
+<div id='admin'>
+  <% @options.each do |option,value| %>
+    <a href='<%= value %>' ><%= option.to_s %></a>
+  <% end %>
+</div>
