@@ -3,8 +3,17 @@
     <li>Locations</li>
     <li>Menu</li>
     <li>Employees</li>
-    <li>
-      <a href='/auth/signin'>Sign In</a>
-    </li>
+    <% if session[:user_id].nil? %>
+      <li>
+        <a href='/auth/signin'>Sign In</a>
+      </li>
+    <% else %>
+      <li>
+        <a href='/admin'>Admin Panel</a>
+      </li>
+      <li>
+        <a href='/auth/logout'>Logout</a>
+      </li>
+    <% end %>
   </ul>
 </div>

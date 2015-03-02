@@ -3,3 +3,9 @@
 get '/' do
   erb :index
 end
+
+get '/admin' do
+  puts "ZAAACCCKKKK"
+  puts session[:user_id]
+  erb :admin
+end
