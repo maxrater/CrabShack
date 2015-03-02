@@ -3,6 +3,18 @@ header {
   border-bottom: 3px solid #B05F3F;
   height: 75px; }
 
+#error{
+  width: 100%;
+  color: #fff;
+  background-color: red;
+  text-align: center;
+  padding: 5px;
+  display: none;
+}
+
+.show{
+  display:block !important; }
+
 header > div {
   float:left;
   display: block; }
