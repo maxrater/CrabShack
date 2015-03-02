@@ -8,6 +8,8 @@ gem 'pg'
 gem 'activerecord'
 gem 'activesupport'
 
+gem 'bcrypt'
+
 group :development do
   gem 'pry'
 end

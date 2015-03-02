@@ -1,8 +1,8 @@
 # build the owner user
-owner = User.create(name: 'Chris DiMartino', password_digest: '123123123123')
+owner = User.create(name: 'admin', password: '1234')
 
 # give our restaurant a manager
-manager = User.create(name: 'Zack Mance', password_digest: '23232323232', manager: owner)
+manager = User.create(name: 'zmance', password: '1234', manager: owner)
 
 restaurant = Restaurant.create(name: 'Crab Shack', manager: manager, owner: owner)
 

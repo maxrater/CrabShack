@@ -3,9 +3,13 @@ ENV['BUNDLE_GEMFILE'] ||= File.expand_path('../Gemfile', __FILE__)
 # DSL
 require 'sinatra'
 require "sinatra/reloader" if development?
+
 # DB / ORM
 require 'pg'
 require 'active_record'
+
+#Auth 
+require 'bcrypt'
 
 # Ruby Must Haves
 require 'bundler/setup'
