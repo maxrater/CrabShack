@@ -6,7 +6,7 @@ end
 
 get '/admin' do
  
-  redirect '/auth/signin?error=true' if session[:user_id].nil?
+  redirect '/auth/signin?error=naa' if session[:user_id].nil?
 
   @options = Hash.new
   @options[:users] = '/users'

@@ -9,7 +9,7 @@ end
 post '/authenticate/signup' do
   user = User.new(params)
   redirect '/admin' if user.save
-  redirect '/auth/register?error=true'
+  redirect '/auth/register?error=sww'
 end
 
 post '/auth/login' do 
@@ -19,7 +19,7 @@ post '/auth/login' do
     session[:user_id] = user.id
     redirect '/admin'
   else
-    redirect 'auth/signin?error=true'
+    redirect 'auth/signin?error=upi'
   end
 end
 
