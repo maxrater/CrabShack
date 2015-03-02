@@ -1,11 +1,8 @@
 get '/auth/signin' do
-  @error = 'already signed in' unless session[:user_id].nil?
-  @error = 'Username or Password Invalid' if params[:error]
   erb :'auth/signin' 
 end
 
 get '/auth/register' do
-  @error = 'something went wrong' if params[:error]
   erb :'/auth/register'
 end
 
