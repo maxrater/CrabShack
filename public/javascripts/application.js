@@ -1,3 +1,43 @@
+var MangoPerson = function(params){
+  this.name = params.name;
+  this.mangos = params.mangos;
+  this.sandals = params.sandals;
+
+}
+MangoPerson.prototype.cutMangos = function(){
+  console.log('i cut up some mangos for check-in');
+}
+
+MangoPerson.planTree = function(){
+  console.log(' I put a new mango tree in the ground ' );
+}
+
+success: function(response){
+
+         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var errorWidget = {
   errorMessages:   {
     sww: 'Something Went Wrong',
