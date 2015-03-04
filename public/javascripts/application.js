@@ -24,9 +24,3 @@ function getParameterByName(name) {
   return results === null ? undefined : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
 
-window.addEventListener('load',function(){
-  var err = getParameterByName('error');
-  if( err != undefined )
-    errorWidget.showMessage(err)
-});
-
