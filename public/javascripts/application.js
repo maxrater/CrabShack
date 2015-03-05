@@ -1,49 +1,36 @@
-var MangoPerson = function(params){
-  this.name = params.name;
-  this.mangos = params.mangos;
-  this.sandals = params.sandals;
+var errorModule = function(){
 
-}
-MangoPerson.prototype.cutMangos = function(){
-  console.log('i cut up some mangos for check-in');
-}
+  var errorMessages = {
+    sww: 'Something Went Wrong',
+    upi: 'Invluad Username or Password',
+    naa: 'Not Allowed Access'      
+   };
 
-MangoPerson.planTree = function(){
-  console.log(' I put a new mango tree in the ground ' );
-}
+  var defaultMessage = 'sww';
 
-success: function(response){
+  var showMessage = function(messageCode){
+    var msgText = messageCode == undefined ? errorMessages[defaultMessage] : errorMessages[messageCode];
+    $('#error').text(msgText);
+    $('#error').removeClass('hide');
+  };
 
-         }
+  var hideMessage = function(){
+    $('#error').text('');
+    $('#error').addClass('hide');
+  };
 
+  return{
+    show: showMessage,
+    hide: hideMessage
+  };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}();
 
 
 
 
 
 var errorWidget = {
-  errorMessages:   {
-    sww: 'Something Went Wrong',
-    upi: 'Invluad Username or Password',
-    naa: 'Not Allowed Access'      
-   },
    defaultMessage:  'sww',
    showMessage:     function(messageCode){
       msgText = messageCode == undefined ? this.errorMessages[this.defaultMessage] : this.errorMessages[messageCode];
@@ -62,5 +49,19 @@ function getParameterByName(name) {
   var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
   results = regex.exec(location.search);
   return results === null ? undefined : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+var MangoPerson = function(params){
+  this.name = params.name;
+  this.mangos = params.mangos;
+  this.sandals = params.sandals;
+
+}
+MangoPerson.prototype.cutMangos = function(){
+  console.log('i cut up some mangos for check-in');
+}
+
+MangoPerson.planTree = function(){
+  console.log(' I put a new mango tree in the ground ' );
 }
 
